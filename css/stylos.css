@@ -8,6 +8,10 @@
         width: 100%;
         background-color: white;
         border-bottom: 1px solid rgba(0, 0, 0, .2);
+        /* position: fixed;
+        z-index: 1;
+        top: 0;
+        transition: height .2s ease-in-out; */
     }
     
     .container-head {
@@ -37,7 +41,7 @@
         position: relative;
     }
     
-    input {
+    .form-item input {
         background: #fafafa;
         border: solid 1px #dbdbdb;
         text-align: center;
@@ -77,6 +81,119 @@
     .navigator ul li a {
         list-style: none;
         font-size: 24px;
+    }
+    
+    .user-container {
+        display: grid;
+        grid-template-columns: minmax(100px, 321px) minmax(200px, 614px);
+        grid-template-rows: minmax(100px, 270px);
+        justify-content: center;
+    }
+    
+    .user-perfil {
+        color: #262626;
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+    
+    .user-perfil-image {
+        padding: 40px;
+    }
+    
+    .user-perfil-image img {
+        width: 100%;
+        border-radius: 50%;
+    }
+    
+    .user-details {
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+    
+    .user-nick {
+        font-size: 26px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: lighter;
+        align-self: center;
+    }
+    
+    .user-nick input {
+        background: transparent;
+        border: solid 1px #dbdbdb;
+        text-align: center;
+        border-radius: 3px;
+        padding: 5px 9px;
+        cursor: pointer;
+        color: var(--f07, #262626);
+        font-weight: bold;
+        margin: 0 15px;
+    }
+    
+    .fa-cog {
+        cursor: pointer;
+    }
+    
+    .user-details {
+        display: grid;
+        grid-template-rows: repeat(3, 51.5px);
+        align-content: center;
+    }
+    
+    .user-info {
+        font-size: 16px;
+        align-self: center;
+    }
+    
+    .user-info ul {
+        padding: 0;
+        margin: 0;
+        display: inline;
+    }
+    
+    .user-info ul li {
+        /* padding: 0 12px; */
+        display: inline-block;
+        margin-right: 40px;
+    }
+    
+    .user-info ul li span {
+        list-style: none;
+    }
+    
+    .user-name {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+    
+    .profiles {
+        display: grid;
+        grid-template-columns: minmax(100px, 935px);
+        grid-template-rows: 50px;
+        justify-content: center;
+    }
+    
+    .profiles-list {
+        text-align: center;
+        align-self: center;
+    }
+    
+    .profiles-list ul {
+        padding: 0;
+        margin: 0;
+        display: inline;
+    }
+    
+    .profiles-list ul li {
+        display: inline-block;
+        margin-right: 60px;
+    }
+    
+    .profiles-list ul li a {
+        text-decoration: none;
+        color: #999;
+        font-size: 12px;
+    }
+    
+    .profiles-list ul li a i {
+        margin-right: 4px;
     }
     
     .post-list {
